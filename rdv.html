@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santra Plus</title>
+    <!-- link du css -->
+    <link href="assets/css/rdv.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barre de nav -->
+        <nav id='menu'>
+            <ul>
+
+                <li><a href='accueil.html'>Accueil</a></li>
+                <li><a href='accueil.html#general-presentation'>Qui sommes-nous ?</a></li>
+                <li><a href='accueil.html#contact'>Contactez-nous</a></li>
+                <li><a href='formulaire.html'>Formulaire</a></li>
+                <li><a href='#annulerreporter'> Reportez/Annuler un RDV</a></li>
+                <li><a href="#virgilzanardi"><span class="material-icons" id="profile-icon">
+                            perm_identity
+                        </span></a></li>
+
+            </ul>
+        </nav>
+    <!-- récolte des infos nécessaires pour reporter/annuler le rdv-->
+    <fieldset class="formulaire">
+        <div class="column">
+            <p>Annulez ou reporter un rendez-vous</p>
+            <div class="form-column">
+                <label for="daterendezvous">Date du rendez-vous:</label>
+                <input type="date" id="daterendezvous" required>
+            </div>
+            <div class="form-column">
+                <label for="horaire">Horaire du rendez-vous :</label>
+                <input type="text" id="horaire" required> 
+            </div>
+            <div class="form-column">
+                <label for="nommedecin">Nom du médecin ou infirmière:</label>
+                <input type="text" id="nommedecin" required>
+            </div>
+            <div class="form-column">
+                <div><p>Reporter le rendez-vous:</p>
+                    <label for="dispo">
+                        <input type="radio" name="question" value="dispo" id="dispo" />
+                        Oui ,disponibilités:
+                        <input type="text" id="dispo" required>
+                    </label>
+                    <input type="radio" name="question" value="motif" id="motif" />
+                    <label for="motif">Non,motif:
+                        <input type="text" id="dispo" required>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <!-- pied de page pour valider le formulaire -->
+    <footer>
+        <fieldset class="formulaire">
+            <a href="success1.html">
+                <input type="button" value="Valider" />
+            </a>
+        </fieldset>
+        <p>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; www.santraplus.fr &bull; SIRET 781 061 106 000 48 &bull; APE 8621Z</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link du css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/formulaire.css">
+    <title> Santra Plus</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barre de nav -->
+        <nav id='menu'>
+            <ul>
+
+                <li><a href='accueil.html'>Accueil</a></li>
+                <li><a href='accueil.html#general-presentation'>Qui sommes-nous ?</a></li>
+                <li><a href='accueil.html#contact'>Contactez-nous</a></li>
+                <li><a href='formulaire.html'>Formulaire</a></li>
+                <li><a href='#annulerreporter'> Reportez/Annuler un RDV</a></li>
+                <li><a href="#virgilzanardi"><span class="material-icons" id="profile-icon">
+                            perm_identity
+                        </span></a></li>
+
+            </ul>
+        </nav>
+        <!-- insertion du logo -->
+        <img src="kit-media/logo_santraplus.png" alt="logo" class="logo">
+    </header>
+    <form>
+        <!-- entête du formulaire -->   
+            <div class="grid-container">
+                <div class="Formulaire">
+                    <p>Formulaire à adresser par courrier, fax ou e-mail :
+                        planning@santraplus.fr</p>
+                    </div>
+                    <div class="planning">
+                        <p>Planning Santra Plus - CS20874 - 76087 Le Havre CEDEX - fax:02 32 74 51 20</p>
+                    </div>
+                    <p>Attention! Toute demande incomplète ne sera pas prise en compte.</p>
+                    <!-- première partie du formulaire -->
+                    <fieldset class="formulaire">
+                        <div class="column">
+                            <p>Vos Références</p>
+                            <p>Raison sociale</p>
+                    <div class="form-column">
+                        <label for="name">Nom du demandeur:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="numberod">N°d'adhérent: </label>
+                        <input type="text" id="numberod" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="numberphone">Téléphone:</label>
+                        <input type="text" id="numberphone" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="fax"> Fax:</label>
+                        <input type="text" id="fax" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="mail">Mail:</label>
+                        <input type="text" id="mail" required>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- deuxième partie du formulaire -->
+            <fieldset class="formulaire">
+                <div class="column">
+                    <p>Le salarié</p>
+                    <div class="form-column">
+                        <p>Civilité:
+                            <input type="radio" name="question" value="monsieur" id="monsieur" />
+                            <label for="monsieur">Monsieur</label>
+                            <input type="radio" name="question" value="madame" id="madame" />
+                            <label for="madame">Madame</label>
+                        </p>
+                    </div>
+                    <div class="form-column">
+                        <label for="naissance">Nom de naissance:</label>
+                        <input type="text" id="naissance" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="nommarital">Nom Marital:</label>
+                        <input type="text" id="nommarital">
+                    </div>
+                    <div class="form-column">
+                        <label for="postedetravail">Poste de travail:</label>
+                        <input type="text" id="postedetravail">
+                    </div>
+                    <div class="form-column">
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="datedenaissance">Date de naissance:</label>
+                        <input type="date" id="datedenaissance">
+                    </div>
+                    <div class="form-column">
+                        <label for="pcs">Code PCS:</label>
+                        <input type="text" id="pcs">
+                    </div>
+                </div>
+            </fieldset>
+            <!-- troisième partie du formulaire -->
+            <fieldset class="formulaire">
+                <div class="column">
+                    <p>Informations complémentaires pour création nouveau salarié</p>
+                    <div class="form-column">
+                        <label for="datedembauche">Date d'embauche:</label>
+                        <input type="text" id="datedembauche" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="typedecontrat">Type de contrat(CDD ;CDI ;apprenti):</label>
+                        <input type="text" id="typedecontrat" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="cdd">Pour les CDD, date de fin de contrat:</label>
+                        <input type="text" id="cdd" required>
+                    </div>
+                    <div class="form-column">
+                        <div>
+                            <p>Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour
+                                votre
+                                entreprise ou pour une autre entreprise :</p>
+                            <label for="oui">Oui</label>
+                            <input type="radio" name="question" value="oui" id="oui" />
+                            <label for="non">Non</label>
+                            <input type="radio" name="question" value="non" id="non" />
+                        </div>
+                    </div>
+                    <p><span>Catégorie suivant les surveillances:</span> Cocher la ou les cases correspondantes</p>
+                    <div class="form-column">
+                        <p>Suivi Individuel Simple (SI):</p>
+                        <label for="casgenerale">
+                            <input type="checkbox" name="casgenerale" id="casgenerale" />
+                            Cas général hors risque particulier.
+                        </label>
+                        <label for="salariebiologique">
+                            <input type="checkbox" name="salariebiologique" id="salariebiologique" />
+                            Salarié exposé aux agents biologiques groupe 2. (AB2)
+                        </label>
+                        <label for="moins18ans">
+                            <input type="checkbox" name="moins18ans" id="moins18ans" />
+                            Moins de 18 ans non affecté à travaux réglementés.</label>
+                        <label for="salarieelectro">
+                            <input type="checkbox" name="salarieelectro" id="salarieelectro" />
+                            Salarié exposé aux champs électromagnétiques si VLE dépassée.
+                        </label>
+                    </div>
+                    <div class="form-column">
+                        <p>Suivi Individuel Adapté(SIA) :</p>
+                        <label for="travailleurnuit">
+                            <input type="checkbox" name="travailleurnuit" id="travailleurnuit" />
+                            Travailleur de nuit.</label>
+                            <label for="travailleurhandicapé">
+                            <input type="checkbox" name="travailleurhandicapé" id="travailleurhandicapé" />
+                            Travailleur handicapé. </label>
+                        <label for="travailleurtitulaire">
+                            <input type="checkbox" name="travailleurtitulaire" id="travailleurtitulaire" />
+                            Travailleur titulaire d’une pension d’invalidité. </label>
+                        <label for="enceinte">
+                            <input type="checkbox" name="enceinte" id="enceinte" />
+                            Femme enceinte, allaitante ou venant d’accoucher. </label>
+                    </div>
+                    <div class="form-column">
+                        <p>Suivi Individuel Renforcé (SIR) :</p>
+                        <label for="salarieamiante">
+                            <input type="checkbox" name="salarieamiante" id="salarieamiante" />
+                            Salarié exposé à l’amiante.</label>
+                        <label for="salarieplomb">
+                            <input type="checkbox" name="salarieplomb" id="salarieplomb" />
+                            Salarié exposé au plomb. </label>
+                        <label for="salariegp3">
+                            <input type="checkbox" name="salarie gp3" id="salariegp3" />
+                            Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4). </label>
+                            <label for="salariehyperbare">
+                            <input type="checkbox" name="salariehyperbare" id="salariehyperbare" />
+                            Salarié exposé au risque Hyperbare. </label>
+                        <label for="salarierayonnement">
+                            <input type="checkbox" name="salarierayonnement" id="salarierayonnement" />
+                            Salarié exposé aux rayonnements ionisants Cat B </label>
+                        <label for="salariechutehauteur">
+                            <input type="checkbox" name="salariechutehauteur" id="salariechutehauteur" />
+                            Salarié exposé au risque de chute de hauteur lors du montage et
+                            Autorisation de conduite démontage d’échafaudage. </label>
+                        <label for="habilitationelec">
+                            <input type="checkbox" name="habilitationelec" id="habilitationelec" />
+                            Habilitation électrique (travaux sur installations électriques) .
+                        </label>
+                        <label for="manutention">
+                            <input type="checkbox" name="manutention" id="manutention" />
+                            Manutention manuelle, port de charge ˃55kg (R4541-9). </label>
+                        <label for="salariecmr">
+                            <input type="checkbox" name="salariecmr" id="salariecmr" />
+                            Salarié exposé à CMR. </label>
+                        </div>
+                    <div class="form-column">
+                        <p>Suivi Individuel Renforcé Annuel (SIRA) :</p>
+                        <label for="rayonnementsion">
+                            <input type="checkbox" name="rayonnementsion" id="rayonnementsion" />
+                            Rayonnements ionisants Cat A .</label>
+                            <label for="travauxreglementes">
+                            <input type="checkbox" name="travauxreglementes" id="travauxreglementes" />
+                            Moins de 18 ans affecté à travaux réglementés </label><br>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- quatrième partie du formulaire -->
+                <fieldset class="formulaire">
+                    <div class="column">
+                    <p>Demande de rendez-vous</p>
+                    <div class="form-column">
+                        <label for="repriseabsence">
+                            <input type="checkbox" name="repriseabsence" id="repriseabsence" />
+                            Reprise après une absence de + 30 jours suite : </label>
+                            <label for="accident">
+                                <input type="radio" name="question" value="accident" id="accident" />
+                                accident de travail</label>
+                            <label for="maladie">
+                                <input type="radio" name="question" value="maladie" id="maladie" />
+                            arrêt maladie</label>
+                            <div class="date reprise">
+                            <label for="datereprise">
+                                Date de la reprise:</label>
+                                <input type="text" id="datereprise" required>
+                        </div>
+                        <div class="dureearret">
+                            <label for="dureearret">
+                                Durée de l'arrêt:</label>
+                            <input type="text" id="dureearret">
+                        </div>
+                        <label for="reprisecongé">
+                            <input type="checkbox" name="reprisecongé" id="reprisecongé" />
+                            Reprise après un congé de maternité</label>
+                        <div class="datereprise1">
+                            <label for="datereprise1">
+                                Date de la reprise:</label>
+                                <input type="text" id="datereprise1" required>
+                        </div>
+                        <div class="dureearret1">
+                            <label for="dureearret1">
+                                Durée de l'arrêt:</label>
+                            <input type="text" id="dureearret1">
+                        </div>
+                        <label for="reprisemaladie">
+                            <input type="checkbox" name="reprisemaladie" id="reprisemaladie" />
+                            Reprise après une absence pour cause de maladie
+                            professionnelle.</label>
+                        <div class="datereprise2">
+                            <label for="datereprise2">
+                                Date de la reprise:</label>
+                                <input type="text" id="datereprise2" required>
+                        </div>
+                        <div class="dureearret2">
+                            <label for="dureearret2">
+                                Durée de l'arrêt:</label>
+                            <input type="text" id="dureearret2">
+                        </div>
+                        <div>
+                            <label for="examen">
+                                <input type="checkbox" name="examen" id="examen" />
+                            </label>
+                            <label>
+                                Examen à la demande de l’employeur (merci de préciser le motif):
+                                <input type="text" name="examen" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- cinquième partie du formulaire -->
+            <fieldset class="formulaire">
+                <div class="column">
+                    <div class="formulaire">
+                        <a href="success.html">
+                            <input type="button" value="Valider" />
+                        </a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <!-- pied de page du site pour valider le formulaire -->
+    <footer>
+        <div class="reportrdv" id="annulerreporter">
+            <p>Pour annuler ou reporter un rendez-vous cliquez sur le bouton ci-dessous!</p>
+            <a href="rdv.html">
+                <input type="button" value="Annuler/reporter" />
+            </a>
+            <p>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; www.santraplus.fr &bull;
+                SIRET 781 061 106 000 48 &bull; APE 8621Z</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
